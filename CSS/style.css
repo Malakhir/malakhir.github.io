@@ -1,0 +1,120 @@
+/* RESET */
+/* LAYOUT */
+/* GENERIC ITEMS */
+/* PART OF THE WEB */
+/* ELEMENTS */
+/* LIST */
+/* --------------------------------------- */
+/* Colors
+Color 1: #FE5F55
+Color 2: #F7F7FF
+Color 3: #BDD5EA
+Color 4: #577399
+Color 5: #495867
+Color 6: #ce2121
+Color 7: #000000
+Color 8: #ffffff
+color 9: #8f8f8f
+*/
+
+/* RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* LAYOUT */
+
+.body { text-align: center; font-family: 'Newsreader', serif;}
+    .header {display: flex;justify-content: center; align-items: center;}
+    .navbar {display: flex; justify-content: center; align-items: center;flex-flow: row;}
+	h1, h2, h3, ul{ font-family: 'Roboto Slab', serif;}
+	.section { display: flex; justify-content: center; align-items: center; text-align: center; flex-flow: column;}
+
+/* GENERIC ITEMS */
+
+.header { height: 100vh;
+background: url(../images/header.jpg) no-repeat center top;background-size: cover;}
+.form { display: flex; justify-content: center; align-items: center; height: 100vh; width: 1100px; background-color: rgba(143, 143, 143, 0.171);}
+.navbar { height: 70px; background: #ce2121; padding: 100;}
+
+
+/* PART OF THE WEB */
+input [type=submit], input [type=reset] { padding: 16px 32px; margin: 4px 2px;}
+.titulo1 { background-color: rgba(143, 143, 143, 0.171); font-size: 5em; font-weight: 700; font-style: initial; padding: 10px; color: rgb(206, 33, 33); height: 480px; text-align: center; padding-top: 2em;}
+
+input {
+	width: 30vw; height: 50px; padding: 0px 15px 0px 15px; background: #7a7a7a96; outline: none; border: solid 1px #000; color: rgb(206, 33, 33);
+}
+input::-webkit-input-placeholder { color: #ce2121;}
+
+
+
+/* ELEMENTS */
+.legend { padding-bottom: 10px; font-weight: 800;}
+.enviar { width: auto;}
+.reset { width: 95px; text-align: center;}
+.unete { font-weight: 500;}
+.navbar1 { position: sticky; top: 0px;}
+	li {list-style-type: none; display: inline; padding: 2vw; }
+	li a {display: inline-block; color: #000; text-align: center; text-decoration: none;}
+	a:hover { text-decoration: underline; font-size: 80%;}
+h2 { font-weight: 900; font-size: 40px; padding-top: 30px; padding-bottom: 20px; text-transform: uppercase;}
+p { margin-left: 5vw; margin-right: 5vw; text-transform: capitalize;}
+.academy { background-color: #BDD5EA; padding-bottom: 50px; padding-top: 30px;}
+.facultad { background-color: #577399; padding-bottom: 50px; padding-top: 30px;}
+.estudiantes { background-color: #495867; padding-top: 30px; padding-bottom: 50px;}
+.tramites { background-image: url(/images/tramites.jpg); background-size: contain; background-repeat: round; padding-bottom: 50px; padding-top: 30px; text-shadow: 0px 0px 5px #fff; font-weight: 600;}
+.contactanos { background-color: #F7F7FF; padding-top: 30px; padding-bottom: 40px; background: url(/images/logo1.png) left top repeat-y;}
+	.contactanos p { padding-bottom: 20px;}
+	.btn { background: #ce2121; color: #000; text-transform: capitalize; font-weight: 600; border-radius: 10px; padding: 10px;}
+	.boton { text-decoration: none; color: #000;}
+	.boton:hover { text-decoration: underline; font-size: 120%;}
+footer { background-color: #7a7a7a; padding-top: 20px; padding-bottom: 30px; text-align: center;}
+
+/* LIST */
