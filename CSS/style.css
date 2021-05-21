@@ -3,7 +3,9 @@
 /* GENERIC ITEMS */
 /* PART OF THE WEB */
 /* ELEMENTS */
+/* RESPONSIVE DESING */
 /* LIST */
+
 /* --------------------------------------- */
 /* Colors
 Color 1: #FE5F55
@@ -72,7 +74,7 @@ table {
 
 .body { text-align: center; font-family: 'Newsreader', serif;}
     .header {display: flex;justify-content: center; align-items: center;}
-    .navbar {display: flex; justify-content: center; align-items: center;flex-flow: row;}
+    .navbar {display: flex; list-style: none;}
 	h1, h2, h3, ul{ font-family: 'Roboto Slab', serif;}
 	.section { display: flex; justify-content: center; align-items: center; text-align: center; flex-flow: column;}
 
@@ -81,8 +83,6 @@ table {
 .header { height: 100vh;
 background: url(../images/header.jpg) no-repeat center top;background-size: cover;}
 .form { display: flex; justify-content: center; align-items: center; height: 100vh; width: 1100px; background-color: rgba(143, 143, 143, 0.171);}
-.navbar { height: 70px; background: #ce2121; padding: 100;}
-
 
 /* PART OF THE WEB */
 input [type=submit], input [type=reset] { padding: 16px 32px; margin: 4px 2px;}
@@ -100,9 +100,11 @@ input::-webkit-input-placeholder { color: #ce2121;}
 .enviar { width: auto;}
 .reset { width: 95px; text-align: center;}
 .unete { font-weight: 500;}
-.navbar1 { position: sticky; top: 0px;}
-	li {list-style-type: none; display: inline; padding: 2vw; }
-	li a {display: inline-block; color: #000; text-align: center; text-decoration: none;}
+.navbar1 { position: sticky; top: 0px;background: #ce2121;}
+  nav ul { display: flex; padding: 0; margin: 0px;}
+	li { border-right: 1px solid #000;}
+	li:hover { background: rgba(185, 121, 121, 0.3);}
+	li a {display: block; color: #000; padding: 15px 20px; text-align: center; text-decoration: none;}
 	a:hover { text-decoration: underline; font-size: 80%;}
 h2 { font-weight: 900; font-size: 40px; padding-top: 30px; padding-bottom: 20px; text-transform: uppercase;}
 p { margin-left: 5vw; margin-right: 5vw; text-transform: capitalize;}
@@ -110,11 +112,26 @@ p { margin-left: 5vw; margin-right: 5vw; text-transform: capitalize;}
 .facultad { background-color: #577399; padding-bottom: 50px; padding-top: 30px;}
 .estudiantes { background-color: #495867; padding-top: 30px; padding-bottom: 50px;}
 .tramites { background-image: url(/images/tramites.jpg); background-size: contain; background-repeat: round; padding-bottom: 50px; padding-top: 30px; text-shadow: 0px 0px 5px #fff; font-weight: 600;}
-.contactanos { background-color: #F7F7FF; padding-top: 30px; padding-bottom: 40px; background: url(/images/logo1.png) left top repeat-y;}
+.contactanos { background-color: #F7F7FF; padding-top: 30px; padding-bottom: 40px; background: url(/images/logo1.png) left top repeat-y; border-image-width: 80vw;}
 	.contactanos p { padding-bottom: 20px;}
 	.btn { background: #ce2121; color: #000; text-transform: capitalize; font-weight: 600; border-radius: 10px; padding: 10px;}
 	.boton { text-decoration: none; color: #000;}
 	.boton:hover { text-decoration: underline; font-size: 120%;}
 footer { background-color: #7a7a7a; padding-top: 20px; padding-bottom: 30px; text-align: center;}
 
-/* LIST */
+/* RESPONSIVE DESING */
+@media only screen and (max-width: 768px){
+	/* For mobile phones */
+	
+	.header { display: block;}
+	.titulo1 { width: auto; height: auto; padding-top: 10px; padding-bottom: 10px;}
+	.form { width: auto; height: auto; padding-top: 10px; display: flex; padding-bottom: 50px;}
+	input { display: block; width: 100%;}
+	.enviar { width: auto; font-size: small; padding-left: 10px; display: inline-block;}
+	.reset {width: auto; text-align: center; display: inline-block;}
+	
+	nav ul { position: relative; background: #ce2121; flex-direction: column; width: 100%;}
+	 nav ul li { border-top: 1px solid #000;}
+	 
+
+}
